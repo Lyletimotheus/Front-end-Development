@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Always add labels to form inputs -->
+    <h1>Forms Demo</h1>
+    <button>Outside of the form</button>
+    <form action="tacos.html">
+        <label for="text">Enter text</label>
+        <input id="text" type="text" placeholder="Enter text">
+        <input name="password" type="password" placeholder="Your password">
+        <input type="color">
+        <input type="number" placeholder="Enter a number" min="1" max="100" step="2">
+        <label for="color">Do you like a color?</label>
+        <input type="checkbox" name="color" id="color">
+
+        <input type="submit" value="Click me">
+        <button>Submit</button>
+    </form>
+
+    <h2>Reddit Search Form</h2>
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>Google Search Form</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">Agree to terms</label>
+    <div>
+        <label for="lyle">Lyle</label>
+        <input type="radio" name="name" id="lyle" value="lyle">
+        <label for="havily">Havily</label>
+        <input type="radio" name="name" id="havily" value="havily">
+        <label for="justine">Justine</label>
+        <input type="radio" name="name" id="justine" value="justine">
+    </div>
+
+    <div>
+        <label for="meal">Select your meal type</label>
+        <select name="meal" id="meal">
+            <option value="">--Please choose a meal--</option>
+            <option value="fish" selected>Fish</option>
+            <option value="veg">Veg</option>
+            <option value="chicken">Chicken</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="cheese">Amount of cheese</label>
+        <input type="range" id="cheese" name="cheese" value="2" min="1" max="10">
+    </div>
+
+    <div>
+        <label for="request"></label>
+        <textarea name="request" id="request" cols="30" rows="10" placeholder="Type your text in here"></textarea>    
+    </div>
+
+    <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="dummy">
+        <label for="first">Enter first name:</label>
+        <input type="text" name="first" required>
+        <label for="last">Enter last name:</label>
+        <input type="text" name="last" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="20">
+        <input type=url" name="" id="">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

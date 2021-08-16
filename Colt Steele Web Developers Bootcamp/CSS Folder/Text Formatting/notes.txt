@@ -1,0 +1,18 @@
+With the width property we are only moving the content of that element within its box
+
+-----------------
+Font sizes 
+-----------------
+1. Relative
+    - EM 
+    - REM 
+    - VH
+    - VW
+    -%
+
+2. Absolute
+    - PX
+    - PT
+    - CM
+    - IN
+    - MM

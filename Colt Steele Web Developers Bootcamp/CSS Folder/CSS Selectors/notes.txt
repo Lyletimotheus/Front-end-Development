@@ -1,0 +1,33 @@
+This will select all list items with a anchor tag
+li a {
+
+}
+
+This is a adjacent selector - selecting the first p element after the h1 element
+h1 + p {
+
+}
+
+This is the direct child selector - selecting all elements of the li on the same level as the div 
+div > li {
+
+}
+
+This is the attribute selector based on the type of password
+
+input [type="password"] {
+
+}
+
+
+-----------------
+Psuedo selectors
+-----------------
+:active 
+:checked
+:first
+:first-child
+:hover 
+:not()
+:nth-child()
+:nth-of-type()
