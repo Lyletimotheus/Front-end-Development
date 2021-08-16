@@ -21,7 +21,7 @@ input [type="password"] {
 
 
 -----------------
-Psuedo selectors
+Psuedo classes
 -----------------
 :active 
 :checked
@@ -31,3 +31,14 @@ Psuedo selectors
 :not()
 :nth-child()
 :nth-of-type()
+
+-----------------
+Psuedo elements
+-----------------
+Keyword added to a selector that lets you style a particular part of selected element(s)
+
+::after
+::before
+::first-letter
+::first-line 
+:: selection 
