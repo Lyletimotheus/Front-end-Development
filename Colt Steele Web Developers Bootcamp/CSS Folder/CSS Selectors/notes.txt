@@ -42,3 +42,19 @@ Keyword added to a selector that lets you style a particular part of selected el
 ::first-letter
 ::first-line 
 :: selection 
+
+-----------------
+The cascade
+-----------------
+The order your styles are declared in and linked to matters. 
+
+
+-----------------
+Specificity
+-----------------
+Remember the order is important:
+    1. ID
+    2. Class 
+    3. Element 
+
+Inline styles are more specific than external css styles 

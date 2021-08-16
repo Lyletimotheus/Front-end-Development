@@ -68,10 +68,7 @@ a:hover {
     color: red;
 }
 
-.posts button:hover {
-    background-color: #e63946;
-    color: #f1faee;
-}
+
 
 .posts a:hover {
     text-decoration: underline;
@@ -95,4 +92,17 @@ h3::first-letter {
 
 ::selection {
     background-color: #e63946;
+}
+
+.posts button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: magenta !important;
 }
