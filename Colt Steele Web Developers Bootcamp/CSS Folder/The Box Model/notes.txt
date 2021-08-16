@@ -1,0 +1,25 @@
+--------------
+The Box Model
+--------------
+1. Border
+2. Padding: space between the actual content and the box border
+3. Margin: space outside an elements border between another element
+
+1. Border Properties 
+    1.1 BORDER-WIDTH: controls the thickness of the border.
+    1.2 BORDER-COLOR: controls the ... color of the border 
+    1.3 BORDER-STYLE: Controls the line style - dashed, solid, etc
+
+2. Padding Properties 
+    Individual Properties
+    2.1 PADDING-LEFT
+    2.2 PADDING-RIGHT
+    2.3 PADDING-BOTTOM
+    2.4 PADDING-TOP
+
+3. Margin Properties
+    3.1 MARGIN-LEFT
+    3.2 MARGIN-RIGHT
+    3.3 MARGIN-BOTTOM
+    3.4 MARGIN-TOP
+
