@@ -1,0 +1,4 @@
+------------------
+Transitions
+------------------
+Property name | Duration | Timing Function | Delay 

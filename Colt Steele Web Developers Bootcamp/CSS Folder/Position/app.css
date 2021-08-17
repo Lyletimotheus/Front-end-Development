@@ -1,0 +1,50 @@
+div {
+    border: 1px solid black;
+    background-color: grey;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#static #two {
+    border: 1px solid black;
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin-left: 10px;
+    position: static;
+}
+
+#relative #two {
+    background-color: green;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+}
+
+#absolute {
+    position: relative;
+}
+
+#absolute #two {
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+#fixed #two {
+    position: fixed;
+    background-color: green;
+    top: 100px;
+}
+
+#sticky #two {
+    background-color: green;
+    position: sticky;
+    top: 40px;
+}    
