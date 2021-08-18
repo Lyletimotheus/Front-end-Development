@@ -1,0 +1,35 @@
+------------------------
+Main Axis
+------------------------
+
+Main Axis - flex-direction: row
+<----------------------- A      B       C ---------------------------->
+
+Main Axis - flex direction: column
+^
+|
+|
+|
+|
+|
+A   
+
+B
+
+C
+|
+|
+|
+|
+|
+
+---------------
+The cross Axis
+----------------
+- runs perpendicular to the main axis, therefore if your flex-direction is set to row or row reverse the cross axis runs down the columns
+
+- If your main axis is column or column-reverse then the cross axis runs along the rows.
+
+
+When working with flexbox:
+    - The parent / container must contain display flex and the flex-direction

@@ -1,0 +1,3 @@
+@media(min-width)
+
+---> It is saying at the minimum with of the page do something
