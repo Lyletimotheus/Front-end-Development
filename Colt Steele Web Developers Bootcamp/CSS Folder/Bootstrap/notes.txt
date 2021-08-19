@@ -1,0 +1,1 @@
+1. We need to understand the grid system when working bootstrap
