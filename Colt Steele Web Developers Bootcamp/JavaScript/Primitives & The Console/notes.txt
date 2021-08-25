@@ -1,0 +1,9 @@
+Primitive Types
+
+1. Number: has one number type - positive numbers, negative numbers, whole numbers and decimal numbers.
+2. String
+3. Boolean
+4. Null
+5. Undefined 
+
+*Symbol and BigInt are also considered a data type 
