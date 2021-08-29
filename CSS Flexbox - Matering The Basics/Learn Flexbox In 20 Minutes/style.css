@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* THIS IS WHEN THE ITEMS ARE DISPLAYED IN A ROW
+.parent {
+    height: 100vh;
+    border: 20px solid black;
+    display: flex;
+    justify-content: space-evenly; TO ALIGN CONTENT HORIZONTALLY*/ 
+    /* align-items:stretch ; /* TO ALIGN THE CHILDREN ELEMENT VERTICALLY*/ /*TO USE STRETCH YOU NEED TO ADJUST THE HEIGHT OF THE CHILD ELEMENT AS IT IS IN RELATION TO THE PARENT ELEMENTS HEIGHT
+}*/
+
+/* THIS IS WHEN WE CHANGE THE FLEX DIRECTION TO COLUMN 
+
+/* .parent { 
+    height: 100vh;
+    border: 20px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}*/
+
+/*  HERE WE USE FLEX WRAP TO WRAP THINGS TO THE NEXT LINE */
+.parent {
+    height: 100vh;
+    border: 20px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    /* align-items: baseline; */
+    /* flex-flow: column wrap;  HERE WE COMBINE FLEX-DIRECTION AND FLEX-WRAP INTO ONE PROPERTY*/ 
+
+}
+
+/* THE ORDER DETERMINES THE ORDER OF THE CHILD ELEMENT FROM THE RIGHT. WHERE THE BIGGER NUMBER WILL BE PUSHED CLOSER TO THE RIGHT HAND SIDE. */
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    /* order: 4; */
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.child2 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* order: 1; */
+    flex-grow: 1;
+}
+
+.child3 {
+    width: 200px;
+    height: 200px;
+    background: purple;
+    /* order: 3; */
+}
+
+/* .child4 {
+    width: 200px;
+    height: 200px;
+    background: orange;
+} */

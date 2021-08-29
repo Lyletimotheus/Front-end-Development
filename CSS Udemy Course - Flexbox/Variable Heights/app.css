@@ -1,0 +1,34 @@
+/* .container {
+    font-size: 1.5rem;
+    display:flex;
+}
+
+.item1 {
+    background-color: firebrick;
+}
+
+.item2 {
+    background-color: yellow;
+} */
+
+.cards {
+    display: flex;
+}
+
+.card {
+    font-size: 1.5 rem;
+    border: 4px solid black;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .body {
+    flex-grow: 1;
+}
+
+.card .footer {
+    padding: 5px;
+    background-color: #f1f1f1;
+}

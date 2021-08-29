@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <!-- FLEX CONTAINER PROPERTIES -->
+    <!--    DISPLAY:    - flex, default is row. This is a block level container.
+                        - inline-flex, here the parent container takes the width of its children elements. This is a inline flex container.
+            FLEX-DIRECTION: How the flex items are placed inside the flex container/ sets the direction of the main-axis 
+                        - row, default. Main-axis direction is from left to right
+                        - row-reverse. Main-axis direction is from right to left. 
+                        - column. Main-axis is from top to bottom.
+                        - column-reverse. Main-axis is from bottom to top. 
+            FLEX-WRAP: Occurs from the last flex item. 
+                        - no-wrap: no change to the default and items don't move onto the next line.
+                        - wrap: flex items wrap itself within the flex container. * When flex - direction is set to column, the flex items will align from top to bottom but on the right hand-side.
+                        - wrap-reverse: the last item will move to the top from left to right. * When flex - direction is set to column, the flex items will align from top to bottom but on the left hand-side.
+            FLEX-FLOW: It is the shorthand of flex-direction and flex-wrap. 
+                        - <flex-direction><flex-wrap>
+
+            JUSTIFY CONTENT: DEFINES THE ALIGNMENT OF ITEMS ALONG THE MAIN AXIS.
+                        - flex-start: places the flex-items at the start of the flex container along the main-axis.
+                        - flex-end: places the flex-items at the end of the flex container along the main-axis. 
+                        - center: places the flex-items at the center of the main-axis.
+                        - space-between: 
+                        - space-around: space being added to the beginning and end of the flex-container. The space is equal to half of the space between the space of the flex-items. 
+                        - space-evenly: spaces the flex-items evenly along the main-axis in the flex-container. 
+
+            ALIGN-ITEMS: HOW ITEMS ARE LAID OUT ALONG THE CROSS AXIS
+                        - stretch is the default value.
+                        - flex-start : flex-items get pushed to the start of the cross axis.
+                        - flex-end : flex-items get pushed to the end of the cross-axis
+                        - center: flex - items are aligned along the center of the cross-axis
+                        - baseline: align according to their contents baseline
+
+            ALIGN-CONTENT: SIMILAR TO JUSTIFY CONTENT, BUT ALIGNS THE ITEM ALONG THE CROSS AXIS *ONLY WORKS WHEN THERE ARE MULTIPLE ROWS WITHIN THE FLEX CONTAINER
+                        - stretch is the default value.
+                        - flex-start: items are at the start of the cross axis.
+                        - flex-end: items are at the end of the cross axis.
+                        - space-between: adds space between the two lines. 
+                        - space-around: adds the space around the lines.
+                        - space-evenly: all spaces are equal.
+                -->
+
+
+    <!-- FLEX ITEM PROPERTIES -->
+        <!-- ORDER: Controls the order the flex-item appears in the flex-container
+                    - the higher the order number the more it gets pushed to the end of the flex-container along the main-axis.
+
+             FLEX-GROW: Defines the flex-item ability to grow. What amount of space inside the flex-container the item should take up. The default value is 0 and a value of 1 the flex-items grow evenly.
+                    - 0 or 1 or 0.5
+
+             FLEX-SHRINK: Defines the ability of a flex-item to shrink if necessary. Default value is set to 1 for each flex-item.
+                    - Flex-item shrinks relative to the flex-items. 
+
+             FLEX-BASIS: Specifies the initial main size of a flex-item. Sets the width of the flex-item based on its content.
+                    - default value is set to auto. Which fits the contents of the flex-item.
+                    - We can specify using px, %, ems, rems and also auto. 
+                    - Flex grow and flex-shrink apply on-top of flex-basis.
+
+             FLEX: It is a shorthand for flex-grow, flex-shrink and flex-basis.
+                    - <flex-grow><flex-shrink><flex-basis>
+                    - default values: 0 1 auto;
+
+             ALIGN-SELF: Alignment of individual flex-items.
+                    - flex-start: the flex-item will be at start of the cross axis.
+                    - flex-end: the flex-item will be at the end of the cross axis.
+                    - center: the flex-item will be at the center of the cross axis. 
+                    - stretch: stretches the items from cross start to cross end. 
+                    - the default is set to auto, which takes into account the alignment of the align-items of the parent container. Which by default is set to stretch. 
+
+             -->
+
+             <!-- USE CASES OF FLEXBOX -->
+
+    <div class="container">
+        <div class="flex-item item-1">Item 1 Flex Basis</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div>
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>
+    </div>
+
+</body>
+</html>

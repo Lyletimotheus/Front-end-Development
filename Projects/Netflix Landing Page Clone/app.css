@@ -1,7 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navBar {
+    position: absolute !important;
+    width: 100%;
+}
+
 .svg-icon-netflix-logo {
     fill: #e50914;
     width: 8rem;
-    margin: 20px 30px ;
+    margin: 20px 1.5rem ;
 }
 
 .container {
@@ -10,20 +24,107 @@
     justify-content: space-between;
 }
 
+#heroImage{
+    background: url("images/netflix-hero-image.jpg") no-repeat center/cover;    
+}
+
 #signInBtn {
     color:#fff;
     background-color: #e50914;
     padding: 7px 17px;
     line-height: normal;
     border-radius: 3px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     margin-top: 1.5rem;
     margin-bottom: auto;
+    margin-right: 1.5rem;
 }
 
 #heroText {
-    margin-top: 10rem;
     text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
+
+#heroText > *, .navBar {
+    z-index: 1;
+    position: relative;
+}
+
+#heroText::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(3, 3, 3, 0.596);
+}
+
+#heroText h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #fff;
+}
+
+#heroText h2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+#heroText p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+#emailSection {
+    display: flex;
+    width: 700px;
+    margin-top: 20px;
+}
+
+#emailInput {
+    height: 60px;
+    width: 100%;
+}
+
+input {
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+#emailSection button {
+    width: 20rem;
+    background: #e50914;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border: none;
+}
+
+/* #emailSection {
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#emailSection button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+} */
+
+
