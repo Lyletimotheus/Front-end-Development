@@ -104,7 +104,122 @@ li a:hover {
     cursor: pointer;
 }
 
+.about {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.about h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0c3671;
+}
+
+.about p{
+    padding: 25px;
+    line-height: 2rem;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0c3671;
+    display: flex;
+    color: #fff;
+    height: auto;
+}
+
+.footer-link.text h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-link.text p {
+    font-size: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 5px 30px;
+    width: 500px;
+}
+
+.footer-link.services {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer-link.services h4 {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.footer-link.services ul{
+    display: flex; 
+    flex-direction: column;
+    height: 200px;   
+    padding: 0; 
+}
+
+.footer-link.services ul li {
+    flex-basis: 500px;
+    align-self: flex-start;
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+}
+
+
+.footer-link.destinations {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer-link.destinations h4 {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.footer-link.destinations ul{
+    display: flex; 
+    flex-direction: column;
+    height: 200px;   
+    padding: 0; 
+}
+
+.footer-link.destinations ul li {
+    flex-basis: 500px;
+    align-self: flex-start;
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+}
 
 /* ADD MEDIA QUERIES  */
+/* SHOW HAMBURGER MENU */
 
+@media all and (max-width:700) {
+    .hamburger {
+        display:block;
+    }
+}
