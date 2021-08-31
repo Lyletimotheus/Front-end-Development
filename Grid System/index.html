@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid System</title>
+    <style>
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+
+
+        .grid-container > div {
+            background-color: #eee;
+            padding: 1em;
+        }
+        .grid-container > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est nisi tempora ea asperiores! Explicabo voluptatem deserunt in reprehenderit molestias. Facere voluptatum voluptatibus sunt tempora illo soluta id perspiciatis nostrum.
+            Optio rem quo ratione veritatis quibusdam accusantium, pariatur quis modi dignissimos aut, a eum. Consequatur omnis, porro libero natus facilis ea est, minus consequuntur similique asperiores, nisi alias impedit repellendus?
+            At cum illo neque sit! Corporis dolore pariatur, quis culpa facilis quos, nemo eius fugit obcaecati animi adipisci deserunt voluptatem incidunt voluptatibus quaerat. Nostrum quaerat impedit excepturi, similique sunt laudantium!
+            Nihil molestiae voluptatibus sed dolores dolorem rem debitis tempore, amet placeat quasi. Minima vero quidem, quaerat officiis suscipit ipsum animi. Animi nemo mollitia temporibus sit, enim doloremque et quae autem.
+        </div>
+        <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus alias deserunt doloribus non. Adipisci corrupti facilis praesentium debitis quisquam ipsam commodi incidunt soluta repellat cum, obcaecati labore veniam, ea aliquid.
+        Laborum, adipisci reprehenderit. Quas mollitia accusantium esse doloremque dignissimos, possimus rem culpa at nihil a, autem eos facilis exercitationem molestiae qui eum distinctio suscipit voluptates ipsam dicta libero itaque? Magni.
+        Velit ullam non quam deleniti maiores ab numquam, sed sint esse inventore? Architecto, corporis nam. Sit facere cupiditate modi distinctio exercitationem enim, saepe debitis commodi omnis perspiciatis, aliquam, quisquam inventore?
+        Atque blanditiis quo ab harum dolorum quis quidem in voluptates nulla reiciendis itaque saepe modi aliquam minus quasi, ratione corporis ipsa deserunt quibusdam iste illo consequatur autem explicabo iure. Dicta!
+        Laborum voluptate, incidunt et hic quas voluptatem totam placeat officia obcaecati ullam unde a minima distinctio enim debitis iure aliquam harum? Ullam dolor ut quo quasi sed expedita ad placeat?
+        Nobis veniam omnis consectetur, fuga itaque voluptatibus officiis, explicabo quidem commodi dignissimos eos eaque similique officia adipisci et quam temporibus amet minima ipsa sint deserunt asperiores. Ducimus, aspernatur! Quasi, voluptatem!
+        Eum vitae corrupti, suscipit quod consequatur hic necessitatibus voluptas exercitationem iure tenetur dicta deserunt enim amet, provident, blanditiis ducimus incidunt aperiam? Et laudantium asperiores facere soluta alias repellendus. Sint, voluptates!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est nisi tempora ea asperiores! Explicabo voluptatem deserunt in reprehenderit molestias. Facere voluptatum voluptatibus sunt tempora illo soluta id perspiciatis nostrum.
+            Optio rem quo ratione veritatis quibusdam accusantium, pariatur quis modi dignissimos aut, a eum. Consequatur omnis, porro libero natus facilis ea est, minus consequuntur similique asperiores, nisi alias impedit repellendus?
+            At cum illo neque sit! Corporis dolore pariatur, quis culpa facilis quos, nemo eius fugit obcaecati animi adipisci deserunt voluptatem incidunt voluptatibus quaerat. Nostrum quaerat impedit excepturi, similique sunt laudantium!
+            Nihil molestiae voluptatibus sed dolores dolorem rem debitis tempore, amet placeat quasi. Minima vero quidem, quaerat officiis suscipit ipsum animi. Animi nemo mollitia temporibus sit, enim doloremque et quae autem.
+        </div>
+        <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus alias deserunt doloribus non. Adipisci corrupti facilis praesentium debitis quisquam ipsam commodi incidunt soluta repellat cum, obcaecati labore veniam, ea aliquid.
+        Laborum, adipisci reprehenderit. Quas mollitia accusantium esse doloremque dignissimos, possimus rem culpa at nihil a, autem eos facilis exercitationem molestiae qui eum distinctio suscipit voluptates ipsam dicta libero itaque? Magni.
+        Velit ullam non quam deleniti maiores ab numquam, sed sint esse inventore? Architecto, corporis nam. Sit facere cupiditate modi distinctio exercitationem enim, saepe debitis commodi omnis perspiciatis, aliquam, quisquam inventore?
+        Atque blanditiis quo ab harum dolorum quis quidem in voluptates nulla reiciendis itaque saepe modi aliquam minus quasi, ratione corporis ipsa deserunt quibusdam iste illo consequatur autem explicabo iure. Dicta!
+        Laborum voluptate, incidunt et hic quas voluptatem totam placeat officia obcaecati ullam unde a minima distinctio enim debitis iure aliquam harum? Ullam dolor ut quo quasi sed expedita ad placeat?
+        Nobis veniam omnis consectetur, fuga itaque voluptatibus officiis, explicabo quidem commodi dignissimos eos eaque similique officia adipisci et quam temporibus amet minima ipsa sint deserunt asperiores. Ducimus, aspernatur! Quasi, voluptatem!
+        Eum vitae corrupti, suscipit quod consequatur hic necessitatibus voluptas exercitationem iure tenetur dicta deserunt enim amet, provident, blanditiis ducimus incidunt aperiam? Et laudantium asperiores facere soluta alias repellendus. Sint, voluptates!
+        </div>
+        <!-- <div>Hello</div> -->
+</div>
+    
+<!-- GRID CONTAINER PROPERTIES -->
+<!--    
+        - DISPLAY: we set it to grid.
+        
+        - GRID-TEMPLATE-COLUMNS: we set the amount of columns we want, with the amounts adding up to 100%.
+
+        - GRID-TEMPLATE-COLUMNS REPEAT(3, 1FR) : we are using a shorthand to write out that we should repeat 1fr 3times.
+
+        - GRID-COLUMN-GAP: we set the gap between the columns so we don't have to use margin. 
+
+        - GRID-ROW-GAP: we set the gap between the rows/ veritcally. 
+
+        - GRID-GAP: shorthand for grid-column-gap and grid-row-gap
+
+        - GRID-AUTO-ROWS: sets the height of the child elements within the grid-container. You can set a minmax height also. 
+
+        - JUSTIFY-ITEMS: here we use to align the content. Aligns the content horizontally.
+            - stretch (default), stretches the whole elements width.
+            - center, aligns it to the center.
+            - start, aligns it to the start.
+            - end, aligns it to the end.
+
+        - ALIGN-ITEMS: aligns the content vertically.
+            - stretch (default), stretches the whole elements width.
+            - center, aligns it to the center.
+            - start, aligns it to the start.
+            - end, aligns it to the end.
+ -->
+
+ <!-- GRID CONTAINER PROPERTIES -->
+    <!-- GRID CHILD ELEMENTS PROPERTIES
+            
+            - JUSTIFY-SELF: element aligns itself horizintally.
+
+            - ALIGN-SELF: element aligns iteself vertically.
+
+            - GRID-COLUMN:
+
+            - GRID-ROW:
+
+    -->
+</body>
+</html>
