@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --navbar-color: #f0e8e5;
+    --primary-text-color:#00616e; 
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* Navigation Styling */
+.flex-container-1{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: var(--navbar-color);
+    padding: 0 5rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.search-area {
+    display: none;
+}
+
+ul {
+    display: none;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+li a{
+    color: var(--primary-text-color);
+}
+
+.search-area input{
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    height: 2rem;
+    background-color:var(--navbar-color);
+}
+
+.search-area input[type="search"]{
+    padding: 0 0 0 1rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.active-link{
+    font-weight: bold;
+} 
+
+
+
+@media (min-width:680px){
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header ul li {
+        padding: 0 .5rem;
+    }
+}
+
+@media (min-width:680px){ /*Applies to small tablet and upwards*/ }
+@media (min-width:768px){ /*Applies to tablet and upwards*/ }
+@media (min-width:1024px){ /*Applies to bigger tablet and upwards*/ }
+@media (min-width:1200px){ /*Applies to desktop and upwards*/ }
+@media (min-width:1536px){ /*Applies to big desktop, TV and upwards*/ }
+
+
+
+
+
+
+
+
+/* --------------- UNDERSTANDING MEDIA QUERIES ------------------*/
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header ul{
+    display: flex;
+}
+
+header li {
+    margin: 0 1rem;
+}
+
+
+.nav-list{
+    display: none;
+}
+
+@media (min-width:768px){
+    .nav-list{
+        display: block;
+    }
+}
+
+.hamburger{
+    display: block;
+}
+
+@media (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+} */
