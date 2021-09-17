@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header nav{
+    display: none;
+    background-color: red;
+}
+
+
+.hero {
+    background-color: rgb(69, 69, 219);
+    padding: 2rem;
+}
+
+.main-content{
+    background-color: yellow;
+    padding: 4rem;
+}
+
+aside{
+    background-color: orange;
+    padding: 2rem;
+}
+
+footer{
+    background-color: rgb(255, 42, 244);
+    padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+   header nav {
+       display: block;
+   }
+
+   .hamburger {
+       display: none;
+   }
+
+   main {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .flex-container {
+       display: flex;
+       height: 500px;
+
+   }
+
+   .main-content{
+       width: 70%;
+       
+   }
+
+   aside {
+       width: 30%;
+   }
+
+}
