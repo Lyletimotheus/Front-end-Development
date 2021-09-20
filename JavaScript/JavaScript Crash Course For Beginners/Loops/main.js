@@ -19,6 +19,7 @@ const todos = [
     },
 ]
 
+
 // -----------------------------------
 //             FOR LOOPS
 // -----------------------------------
@@ -61,14 +62,49 @@ const todos = [
 /*
     1. forEach takes in a call back function
     2. call back function takes in a parameter / variable that you want to use as each item
+    3. paramers: currentvalue, index, array
 */
-   todos.forEach(function(todo) {
-        console.log(todo.text);
-   });
+//    todos.forEach(function(todo) {
+//         console.log(todo);
+//    });
+
+/* todos.forEach((individualArrayItem, indexofIndivualArrayItem, wholeArrayItem) => {
+    // console.log(individualArrayItem);
+    // console.log(individualArrayItem.text);
+    if(indexofIndivualArrayItem == 2){
+        console.log(individualArrayItem.text);
+    }
+});
+*/
+
+
 // -----------------------------------
 //             MAP - ARRAY
 // -----------------------------------
+// 1. Map returns an array
+
+const todoText = todos.map(function(todo){
+    return todo.text; // Returns a new array with just the text pair value
+});
+
+const todoId = todos.map(function(todo) {
+    return todo.id;
+});
+
+console.log(todoId[0]); // Here we return the first id of the array
+
+// console.log(todoText[1]);
+
+
 
 // -----------------------------------
-//             FFILTER - ARRAY
+//             FILTER - ARRAY
 // -----------------------------------
+// If we want to return todos that are completed 
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+}).map(function(todo) {
+    return todo.text;
+})
+// We can chain on other array methods as well
+console.log(todoCompleted);
