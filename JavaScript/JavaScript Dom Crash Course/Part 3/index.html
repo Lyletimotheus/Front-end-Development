@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Part 3 Document Object Model - Events | Item Lister</title>
+</head>
+<body>
+    <!-- 
+        - Tree of nodes/elements created by the browser
+        - JavaScript can be used to read/write/manipulate the DOM
+        - Object orientated representation
+     -->
+     <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">Item Lister</h1>
+        </div>
+     </header>
+     <div class="container">
+         <div id="main" class="card card-body">
+             <h2 class="title">Add Items</h2>
+             <form action="" class="fomr-inline mb-3">
+                 <input type="text" class="form-control ms-2">
+                 <select class="form-control me-2">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                 </select>
+                 <input type="submit" class="btn btn-dark" value="Submit">
+             </form>
+             <h2 class="title">Items</h2>
+             <ul id="items" class="list-group">
+                 <li class="list-group-item">Item 1</li>
+                 <li class="list-group-item">Item 2</li>
+                 <li class="list-group-item">Item 3</li>
+                 <li class="list-group-item">Item 4</li>
+             </ul>
+             <div id="output"></div>
+             <br>
+             <!-- Below is the old way of using events -->
+             <!-- <button onclick="buttonClick()" class="btn btn-dark btn-block" id="button">Click Here</button> -->
+            <button class="btn btn-dark btn-block" id="button">Click Here</button>
+             <div style="width:400px; height:200px; background: #f4f4f4" id="box"></div>
+         </div>
+     </div>
+
+     <!-- <script src="dom.js"></script> -->
+     <!-- <script src="selectors.js"></script> -->
+     <!-- <script src="styleChanges.js"></script> -->
+     <!-- <script src="getElementsByClassName.js"></script> -->
+     <!-- <script src="getElementsByTagName.js"></script> -->
+     <!-- <script src="querySelector.js"></script> -->
+     <script src="events.js"></script>
+
+
+
+</body>
+</html>
