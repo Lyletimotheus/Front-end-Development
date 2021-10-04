@@ -1,4 +1,4 @@
-const years = [2012, 2009, 1995, 1954, 2021, 2026, 1975, 1852, 1953, 2000, 1900];
+const years = [2013, 2009, 1995, 1954, 2021, 2026, 1975, 1852, 1953, 2000, 1900];
 
 // FILTER
 // Filter out all the years after 2000
@@ -34,5 +34,11 @@ const sortedYears = years.sort(function(y1, y2) {
 // const sortedYears = years.sort((y1, y2) => y1 - y2);
 console.log(sortedYears);
 
+// REDUCE
+// Calculate the total  of the array of numbers
+const totalYears = years.reduce(function(total, year) {
+    return total + year;
+});
 
+console.log(totalYears);
 
