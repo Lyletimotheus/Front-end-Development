@@ -17,6 +17,15 @@ const book1 = {
     year: '2013',
     category: [
         'Romance'
-    ]
+    ],
+    getSummary: function() {
+        // this keyword refers to the book object
+        return `${this.title} was written by ${this.author} in ${this.year}`;
+    }
+
 }
-console.log(book1.category[0]);
+// Getting the key pair values of the object literal
+console.log(Object.keys(book1));
+console.log(Object.values(book1));
+
+// console.log(book1.getSummary());
