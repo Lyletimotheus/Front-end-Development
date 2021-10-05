@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX 1 - Text File</title>
+</head>
+<body>
+    <h1>Fetching data from a text file asynchronously.</h1>
+    <button id="button">Get Text File</button>
+    <br><br>
+    <div id="text"></div>
+
+    <script>
+        // Create an event listener
+        const btn = document.querySelector('#button');
+              btn.addEventListener('click', loadText);
+
+        // function to load the text file
+        function loadText() {
+            // 1. Create XHR object
+            var xhr = new XMLHttpRequest();
+
+            // 2. OPEN FUNCTION - type of request, url/file, async (true or false)
+            xhr.open('GET', 'sample.txt', true);
+
+            console.log('READYSTATE:', xhr.readyState);
+
+            // Optional Function ( when you use loaders for showing that something is loading)
+            xhr.onprogress = function () {
+                console.log('READYSTATE:', xhr.readyState);
+            }
+
+            // 3. onreadystatechange(old way) or onload function
+            // 3.1 onload function
+            xhr.onload = function() {
+                console.log('READYSTATE:', xhr.readyState);
+               if(this.status == 200) {
+                    // console.log(this.responseText);
+                    document.querySelector('#text').textContent = this.responseText;
+               }
+            }
+
+            // 3.1.1 When working with onload also use error handling 
+            xhr.onerror = function() {
+                console.log("Request error...");
+            }
+
+            // 3.2 Using onreadystatechange 
+            // xhr.onreadystatechange = function() {
+            //    console.log('READYSTATE:', xhr.readyState);
+            //    if(this.readyState == 4 && this.status == 200) {
+                    // console.log(this.responseText);
+            //    }
+            // }
+
+            // 4. Send the request
+            xhr.send();
+        }
+
+    </script>
+</body>
+</html>

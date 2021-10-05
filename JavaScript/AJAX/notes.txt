@@ -1,0 +1,27 @@
+XMLHTTPREQUEST (XHR) OBJECT
+
+- API in the form an OBJECT (Has properties and methods attached to it)
+- Provided by the browser's JS environment
+- Methods transfer data between client/server
+- Can be used with other protocols than HTTP
+- Can work with data other than XML (JSON, plain text)
+
+LIBRARIES AND OTHER Methods
+- jQuery
+- Axios
+- Superagent
+- Fetch API
+- Prototype
+- Node HTTP
+
+COMMON HTTP STATUS CODES FOUND WHEN WORKING WITH AJAX
+200: "OK"
+403: "Forbidden"
+404: "Not Found"
+
+COMMON STATES WE NEED TO CHECK FOR WHEN USING THE onreadystatechange FUNCTION
+0: request not initialized
+1: server connection established
+2: request received 
+3: processing request
+4: request finished and response is ready 
