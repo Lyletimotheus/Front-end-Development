@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX 5 - Retrieving Data From Database </title>
+</head>
+<body>
+    <button id="button">Get Users</button>
+    <br><br>
+    <h1>Users</h1>
+    <div id="users"></div>
+
+    <script>
+        // 1. Create event listener to listen for button click
+        document.querySelector('#button').addEventListener('click', loadUsers);
+
+// ****************************** GETTING USERS FROM THE USERS.JSON FILE **************************** 
+        function loadUsers() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'users.php', true);
+            xhr.onload = function() {
+                if(this.status == 200) {
+                    let users = JSON.parse(this.responseText);
+                    let output = '';
+                    
+                    users.forEach((user)=> {
+                        output += `<ul>
+                                        <li>ID: ${user.id}</li> 
+                                        <li>Name: ${user.name}</li>
+                                </ul>`;
+                        document.querySelector('#users').innerHTML = output;
+                    });
+                    
+                }else {
+                    document.querySelector('#users').textContent = "An error occurred while trying to fetch the data. Please try again later.";
+                }
+            }
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX 2 - Local JSON File</title>
+</head>
+<body>
+    <button id="button1">Get User</button>
+    <button id="button2">Get Users</button>
+    <br><br>
+    <h1>User</h1>
+    <div id="user"></div>
+    <h1>Users</h1>
+    <div id="users"></div>
+
+    <script>
+        // 1. Create event listener to listen for button click
+        document.querySelector('#button1').addEventListener('click', loadUser);
+        document.querySelector('#button2').addEventListener('click', loadUsers);
+
+        // 2. Create function to load user
+        function loadUser() {
+        // 3. Declare xhr variable
+            let xhr = new XMLHttpRequest();
+        // 4. Call xhr.open
+            xhr.open('GET', 'user.json', true);
+        // 5. Call the onload function
+            xhr.onload = function() {
+        // 6. If statement to make sure a HTTP status code of 200 is reached before proceeding
+                if(this.status == 200) {
+        // 7. Convert the JSON object to a javascript object we can use
+                    let user = JSON.parse(this.responseText);
+        // 8. Initialize the output of where the data is going to be printed to the page
+                    let output = '';
+                    output += `<ul>
+                                    <li>ID: ${user.id}</li> 
+                                    <li>Name: ${user.name}</li>
+                                    <li>Email: ${user.email}</li>
+                                </ul>`;
+                    document.querySelector('#user').innerHTML = output;
+                }else{
+                    document.querySelector('#user').textContent = "An error occurred while trying to fetch the data. Please try again later.";
+
+                }
+            }
+        // 7. Send the request
+        xhr.send();
+        }
+// ****************************** GETTING USERS FROM THE USERS.JSON FILE **************************** 
+        function loadUsers() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'users.json', true);
+            xhr.onload = function() {
+                if(this.status == 200) {
+                    let users = JSON.parse(this.responseText);
+                    let output = '';
+                    
+                    users.forEach((user)=> {
+                        output += `<ul>
+                                        <li>ID: ${user.id}</li> 
+                                        <li>Name: ${user.name}</li>
+                                        <li>Email: ${user.email}</li>
+                                </ul>`;
+                        document.querySelector('#users').innerHTML = output;
+                    });
+                    
+                }else {
+                    document.querySelector('#users').textContent = "An error occurred while trying to fetch the data. Please try again later.";
+                }
+            }
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>

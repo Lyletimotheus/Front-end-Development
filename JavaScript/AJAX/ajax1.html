@@ -23,7 +23,7 @@
             var xhr = new XMLHttpRequest();
 
             // 2. OPEN FUNCTION - type of request, url/file, async (true or false)
-            xhr.open('GET', 'sample.txt', true);
+            xhr.open('GET', 'sample2.txt', true);
 
             console.log('READYSTATE:', xhr.readyState);
 
@@ -39,6 +39,8 @@
                if(this.status == 200) {
                     // console.log(this.responseText);
                     document.querySelector('#text').textContent = this.responseText;
+               }else if(this.status == 404) {
+                    document.querySelector('#text').textContent = "Data Not Found!";
                }
             }
 
