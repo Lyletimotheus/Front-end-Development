@@ -1,0 +1,111 @@
+@import 'default';
+
+// Variables
+$primary-color: tomato;
+$primary-font: sans-serif, 'cursive';
+
+body {
+    background: $primary-color;
+    font-family: $primary-font;
+}
+
+// Nesting example
+.container{
+    width: 100%;
+    height: 100%;
+    nav{
+        ul{
+            li{
+                &:nth-child(1){
+                    font-size: 1em;
+                }
+                &:nth-child(2){
+                    font-size: 2em;
+                }
+                
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+
+// mixins
+@mixin transform_Me($property1, $property2) {
+    width: $property1;
+    height: $property2;
+    background-color: yellow;
+    -ms-transform: rotate(20deg) scale(1.5); /* IE 9*/
+    -webkit-transform: rotate(20deg) scale(1.5); /*Safari 3-8*/
+    transform: rotate(20deg) scale(1.5);
+}
+
+.transform{
+    @include transform_Me(400px,500px);
+    // We can also add other styles in here
+    font-size: 3rem;
+}
+
+.transform-2{
+    @include transform_Me(200px,300px);
+}
+
+
+// Extend
+%extend-border{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: black;
+}
+
+%extend-new{
+    margin:20px;
+    color: #eee;  
+}
+
+.border{
+    @extend %extend-border;
+}
+
+.border1{
+    @extend %extend-border;
+    margin: 20px;
+}
+
+// Pseudo Element
+.element{
+    a{
+        text-decoration: none;
+        color:black;
+        &:hover{
+            color:white;
+        }
+    }
+}
+
+//Operators
+.header{
+    // Addition
+    font-size:4px +2;
+    // Subtraction
+    height: 80% - 5%;
+}
+
+//Multiplication
+.multi{
+    width: 20% * 5;
+// Division
+    height: (24px/4);
+}
+
+// Use the addition operator to concatenate a string
+p{
+    &:before{
+        content: "I am a string " + quote;
+        font-family: cursive + "serif";
+    }
+}
+
+
