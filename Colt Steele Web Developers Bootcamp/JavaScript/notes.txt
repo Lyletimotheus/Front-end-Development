@@ -3,3 +3,4 @@
 |   JavaScript 
 |
 -----------------------------------
+- Use let and const when assigning values to variables 
