@@ -4,14 +4,93 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <title>Hello, world!</title>
+    <style>
+        .row div{
+            padding: 20px 10px;
+            border: 1px solid;
+        }
+    </style>
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <h2>This is a h2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam nesciunt corrupti at quae. Labore neque repellendus dolore officiis, optio rem id voluptatibus qui ex eum corporis dolores sequi in?</p>
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+    <form action="">
+        <label for="">Text Field</label>
+        <input type="text" placeholder="placeholder">
+        <input type="submit" value="Click Here">
+    </form>
+
+    <hr>
+
+    <!-- FIXED CONTAINER -->
+    <div class="container" style="background: skyblue;">
+        <h1>Fixed Container</h1>
+    </div>
+
+    <!-- FIXED CONTAINER -->
+    <div class="container-fluid" style="background: red;">
+        <h1>Fluid Container</h1>
+    </div>
+
+    <!-- GRID SYSTEM -->
+    <div class="container">
+        <div class="row" style="background: lightblue;">
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+        </div>
+
+        <div class="row" style="background: pink;">
+            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3 </div>
+            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3 </div>
+            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+        </div>
+
+        <div class="row" style="background: yellow;">
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- GRID SYSTEM - FLEX PROPERTIEES -->
+    <div class="container">
+        <div class="row" style="background: blueviolet;">
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+        </div>
+
+        <div class="row justify-content-md-end" style="background: rgb(152, 152, 209);">
+            <div class="col-md-2">1 col-md-2</div>
+            <div class="col-md-2 flex-fill">2 col-md-2</div>
+            <div class="col-md-2">3 col-md-2</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Jumbotron -->
+    <!-- <div class="container"> -->
+        <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #aaa; height: 200px;">
+            <div class="container">
+                <h1 class="display-1"> Welcome to the Dojo!</h1>
+                <p class="lead">A guiding light for the less enlightened...</p>
+            </div>
+        </div>
+    <!-- </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
