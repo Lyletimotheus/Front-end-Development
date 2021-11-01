@@ -8,18 +8,33 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Hello, world!</title>
     <style>
-        .row div{
-            padding: 20px 10px;
-            border: 1px solid;
+        .mongo{
+            height: 200px;
         }
     </style>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">LyleCodes</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                     <a href="" class="nav-item nav-link active text-white">Home</a>
+                     <a href="" class="nav-item nav-link text-white">About</a>
+                     <a href="" class="nav-item nav-link text-white">Training</a>
+                     <a href="" class="nav-item nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     
 
-    <!-- Jumbotron -->
-    <!-- <div class="container"> -->
-        <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #aaa; height: 200px;">
+    <!-- JUMBOTRON -->
+        <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #aaa">
             <div class="container">
                 <h1 class="display-1"> Welcome to the Dojo!</h1>
                 <p class="lead">A guiding light for the less enlightened...</p>
@@ -27,7 +42,80 @@
         </div>
 
         
-    <!-- </div> -->
+    <!-- CARDS  -->
+
+        <div class="container text-muted">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="/images/node-js.png" class="card-img-top img-fluid" alt="">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Node.js Training</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis assumenda est ipsa nesciunt, provident ut a consectetur vel praesentium excepturi cumque iusto natus saepe earum repellendus adipisci ipsum reprehenderit reiciendis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="/images/mongo-db.png" class="card-img-top img-fluid mongo" alt="">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Mongo DB Training</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis assumenda est ipsa nesciunt, provident ut a consectetur vel praesentium excepturi cumque iusto natus saepe earum repellendus adipisci ipsum reprehenderit reiciendis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="/images/react.png" class="card-img-top img-fluid" alt="">
+
+                        <div class="card-body">
+                            <h3 class="card-title">React.js Training</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis assumenda est ipsa nesciunt, provident ut a consectetur vel praesentium excepturi cumque iusto natus saepe earum repellendus adipisci ipsum reprehenderit reiciendis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="/images/webpack.png" class="card-img-top img-fluid" alt="">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Webpack Training</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis assumenda est ipsa nesciunt, provident ut a consectetur vel praesentium excepturi cumque iusto natus saepe earum repellendus adipisci ipsum reprehenderit reiciendis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="display-4 text-center py-5 my-4">Meet the speakers</h2>
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a href="#john" class="nav-link active" data-toggle="tab">John Doe</a>
+                <a href="#alexa" class="nav-link" data-toggle="tab">Alexa Brood</a>
+                <a href="#jackson" class="nav-link" data-toggle="tab">Jackson Smith</a>
+                <a href="#jason" class="nav-link" data-toggle="tab">Jason Vuer</a>
+            </nav>
+
+            <div class="tab-content py-5">
+                <div class="tab-pane active" id="john">
+                    <h3>John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, cum ea iste quos est molestias sapiente tenetur eos voluptas libero nulla adipisci at fuga ipsum ullam obcaecati amet quam dolores.</p>
+                </div>
+                <div class="tab-pane" id="alexa">
+                    <h3>Alexa Brood</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, cum ea iste quos est molestias sapiente tenetur eos voluptas libero nulla adipisci at fuga ipsum ullam obcaecati amet quam dolores.</p>
+                </div>
+                <div class="tab-pane" id="jackson">
+                    <h3>Jackson Smith</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, cum ea iste quos est molestias sapiente tenetur eos voluptas libero nulla adipisci at fuga ipsum ullam obcaecati amet quam dolores.</p>
+                </div>
+                <div class="tab-pane" id="jason">
+                    <h3>Jason Vuer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, cum ea iste quos est molestias sapiente tenetur eos voluptas libero nulla adipisci at fuga ipsum ullam obcaecati amet quam dolores.</p>
+                </div>
+            </div>
+        </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
