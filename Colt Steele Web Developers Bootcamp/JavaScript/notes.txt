@@ -4,3 +4,14 @@
 |
 -----------------------------------
 - Use let and const when assigning values to variables 
+
+
+---------------------
+STRING METHODS
+---------------------
+<string>.method() (add the dot to see the various string methods)
+- search within a string
+- replace part of a string
+- change the case of a string
+- Example: touppercase, tolowercase, trim
+- <string>.trim().touppercase(); -> chaining methods on each other
