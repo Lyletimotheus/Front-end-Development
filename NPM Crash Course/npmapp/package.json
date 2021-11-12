@@ -1,0 +1,19 @@
+{
+  "name": "npmapp",
+  "version": "1.0.0",
+  "description": "A simple sample app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "live-server"
+  },
+  "author": "Lyle Timotheus",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
