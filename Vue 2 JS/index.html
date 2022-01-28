@@ -37,6 +37,14 @@
         <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
         <!-- Adding an event modifier to prevent the default behaviour of the a tag -->
         <a v-on:click.prevent="click" href="https://www.google.com">Google</a>
+
+        <hr>
+
+        <h2>Keyboard events</h2>
+        <label for="name">Name:</label>
+        <input type="text" v-on:keyup.enter="logName">
+        <label for="age"></label>
+        <input type="text" v-on:keyup.alt.enter="logAge">
     </div>
 
     <script src="app.js"></script>
