@@ -41,10 +41,18 @@
         <hr>
 
         <h2>Keyboard events</h2>
-        <label for="name">Name:</label>
+        <!-- <label for="name">Name:</label>
         <input type="text" v-on:keyup.enter="logName">
         <label for="age"></label>
-        <input type="text" v-on:keyup.alt.enter="logAge">
+        <input type="text" v-on:keyup.alt.enter="logAge"> -->
+
+        <!-- Two-way Data Binding -->
+        <label for="name">Name:</label>
+        <input type="text" v-model="name">
+        <span>{{ name }}</span>
+        <label for="age"></label>
+        <input type="text" v-model="age">
+        <span>{{ age }}</span>
     </div>
 
     <script src="app.js"></script>

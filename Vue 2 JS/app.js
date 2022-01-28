@@ -6,9 +6,11 @@ new Vue({
         job: "Web Developer",
         website: "https://www.ciphercode.co.za",
         websiteTag:"<a href='https://www.google.co.za'>Google SA</a>",
-        age: 32,
+        // age: 32,
         x:0,
-        y:0
+        y:0,
+        name: "",
+        age: "",
     },
     methods: {
         greet: function(time) {
@@ -28,7 +30,6 @@ new Vue({
             alert("You've clicked me!");
         },
         logName: function() {
-            console.log("You've entered your name");
         },
         logAge: function() {
             console.log("You've entered your age");
