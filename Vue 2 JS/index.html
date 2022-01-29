@@ -62,6 +62,34 @@
         <p>Age + a = {{ addToA }}</p>
         <p>Age + b = {{ addToB }}</p>
 
+        <h2>Dynamic CSS</h2>
+
+        <h3>EXAMPLE 1</h3>
+            <!-- <div v-on:click="available= !available" v-bind:class="{available:available}">
+                <span>Ryu</span>
+            </div> -->
+        <h3>EXAMPLE 2</h3>
+        <button v-on:click="available= !available">Toggle available</button>
+        <button v-on:click="nearby= !nearby">Toggle nearby</button>
+
+        <div v-bind:class="compClasses">
+            <span>Ryu</span>
+        </div>
+
+        <hr>
+
+        <h2>Condtionals</h2>
+        <button v-on:click="error= !error">Toggle Error</button>
+        <button v-on:click="success= !success">Toggle Success</button>
+        <!-- If this is true show either error or the success message -->
+        <!-- <p v-if="error">Error has occured</p> 
+        <p v-else-if="success">Success</p> -->
+
+        <!-- Using v-show -->
+        <p v-show="error">Error</p>
+        <p v-show="success">Success</p>
+
+
 
 
     </div>
