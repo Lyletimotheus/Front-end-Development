@@ -89,7 +89,31 @@
         <p v-show="error">Error</p>
         <p v-show="success">Success</p>
 
+        <hr>
 
+        <h2>Looping using v-for</h2>
+        <ul>
+            <li v-for="character in characters">{{ character }}</li>
+        </ul>
+        </br>
+        <ul>
+            <li v-for="(ninja, index) in ninjas">{{ index }}. {{ ninja.name }} - Age: {{ ninja.age }}</li>
+        </ul>
+        </br>
+        <!-- Using a template to loop through the array -->
+        <template v-for="(ninja, index) in ninjas">
+            <h4>{{ index }}. {{ ninja.name }}</h4>
+            <p>{{ ninja.age }}</p>
+        </template>
+        </br>
+        <!-- When we don't know how many items are in the array/object or their key/pair values -->
+        <template v-for="ninja in ninjas">
+            <!-- When you want to access the entire object or array to see what data it holds -->
+            <!-- <p>{{ ninja }}</p> -->
+            <div v-for="(val,key) in ninja">
+                <p>{{ val }} - {{ key }}</p>
+            </div>
+        </template>
 
 
     </div>
