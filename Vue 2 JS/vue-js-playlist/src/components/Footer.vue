@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import {bus} from '../main';
 
 export default {
     props: {
@@ -18,6 +19,12 @@ export default {
         // title: "Footer Ninjas",
         copyright: "Copyright 2022"
     }
+  },
+  // Lifecycle hook to listen when the component is first created
+  created() {
+      bus.$on('titleChanged', (data) => {
+          this.title = data;
+      })
   }
 }
 </script>

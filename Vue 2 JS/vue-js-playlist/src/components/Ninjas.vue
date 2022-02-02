@@ -35,6 +35,27 @@ export default {
             this.ninjas.pop();
         }
     },
+    // lifecyle hooks function
+    beforeCreate() {
+        alert('beforeCreate');
+    },
+    created() {
+        // Here we will fetch data from a DB or a storage system
+        alert('created');
+    },
+    beforeMount() {
+        alert('beforeMount');
+    },
+    mounted() {
+        // Here we can use this method to manipulate the DOM
+        alert('mounted');
+    },
+    beforeUpdate() {
+        alert('beforeUpdate');
+    },
+    updated() {
+        alert('updated');
+    }
 }
 </script>
 

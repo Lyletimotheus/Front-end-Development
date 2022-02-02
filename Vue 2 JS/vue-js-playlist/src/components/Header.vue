@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {bus} from '../main';
 
 export default {
     props:{
@@ -21,7 +22,9 @@ export default {
       changeTitle: function() {
         //   this.title = "Vue Wizards";
         // This will emit an event and send the changed title upwards to the parent 
-        this.$emit('changeTitle', 'Vue Wizards');
+        // this.$emit('changeTitle', 'Vue Wizards');
+        this.title = "Vue Wizards 1";
+        bus.$emit('titleChanged', 'Vue Wizards 2');
       }
   }
 }
