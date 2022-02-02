@@ -31,3 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
         |           |
         |           |
 LINKS COMPONENT     LOGIN COMPONENT 
+
+### Primitive vs Reference Types
+- Primitive Types: Strings, Booleans and numbers
+- Reference Types: Object and Arrays

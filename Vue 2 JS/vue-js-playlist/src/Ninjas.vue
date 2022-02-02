@@ -18,7 +18,8 @@ export default {
 }
 </script>
 
-<style scoped>
+// By adding scoped in the style tag, we make sure that we are only targetting the h1 on this page/component
+<style scoped> 
   h1{
     color: green;
   }
