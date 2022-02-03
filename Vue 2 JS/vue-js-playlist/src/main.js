@@ -1,19 +1,28 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueResource from 'vue-resource';
+import VueResource from 'vue-resource'
+import VueRouter from 'vue-router'
+import Routes from './routes'
 
 // Initiliazing vue - resource to be used in the scripts 
 Vue.use(VueResource);
+
+Vue.use(VueRouter);
 // import Ninjas from './Ninjas.vue'
 
-// Custom Directive
-Vue.directive("rainbow", {
-  bind(el){
-    // el.style.color = "#" + Math.random().toString().slice(2.8);
-    el.style.color = "red";
-    console.log(el.style.color);
-  }
+// Using vue-router to create custom routes 
+const router = new VueRouter({
+  routes: Routes
 });
+
+// Custom Directive
+// Vue.directive("rainbow", {
+//   bind(el){
+    // el.style.color = "#" + Math.random().toString().slice(2.8);
+//     el.style.color = "red";
+//     console.log(el.style.color);
+//   }
+// });
 
 Vue.directive('theme', {
   bind(el, binding) {
@@ -49,4 +58,5 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  router: router
 }).$mount('#app')

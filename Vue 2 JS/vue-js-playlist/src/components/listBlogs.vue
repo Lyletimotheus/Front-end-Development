@@ -2,22 +2,18 @@
 <!-- We pass through a string of wide in single quotations to indicate that its a string value and not a property/method -->
 <!-- Creating a custom directive and passing in a argument of column -->
     <div v-theme:column="'wide'" id="show-blogs">
-        <h1>All Blog Articles</h1>
+        <h1>List of Blog Articles</h1>
         <input class="search-field" type="text" v-model="search" placeholder="Enter Your Search...">
-        <div v-for="(blog, index) in filteredBlogs" :key="blog.title" class="single-blog">
-             <!-- blog = to the data object we defined below and the .title is what the URL returns when fetching the data successfully -->
-             <!-- Referencing a filter -->
+        <div v-for="blog in filteredBlogs" :key="blog.title" class="single-blog">
             <h2 v-rainbow>{{ blog.title | to-uppercase}}</h2>
-            <p>{{ blog.body | snippet}}</p>
-            <p>{{ index }}</p>
         </div>
 
     </div>
 </template>
 
 <script>
+    // Importing the mixins 
     import searchMixin from '../mixins/searchMixin';
-
 
     export default {
         components: {
@@ -40,7 +36,6 @@
             });
         },
         computed: {
-            
         },
         // Registering a filter locally 
         filters: {
