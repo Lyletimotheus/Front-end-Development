@@ -59,7 +59,7 @@ Vue.filter('snippet', function(value) {
 Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
+  // el: '#app',
   render: h => h(App),
   router: router
 }).$mount('#app')
