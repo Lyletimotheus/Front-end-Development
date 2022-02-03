@@ -12,7 +12,9 @@ Vue.use(VueRouter);
 
 // Using vue-router to create custom routes 
 const router = new VueRouter({
-  routes: Routes
+  routes: Routes,
+  // Changing the mode from hash to history to show user-friendly URL's --> check vue-router docs for more information on setting up routes using .htaccess file
+  mode: 'history'
 });
 
 // Custom Directive
@@ -57,6 +59,7 @@ Vue.filter('snippet', function(value) {
 Vue.config.productionTip = false
 
 new Vue({
+  el: '#app',
   render: h => h(App),
   router: router
 }).$mount('#app')
