@@ -23,6 +23,7 @@ Vue.directive('theme', {
     } else if(binding.value == "narrow") {
       el.style.maxWidth= "560px";
     }
+    // Here we are referencing the argument of column we have created
     if(binding.arg == "column"){
       el.style.backgroundColor = "#ddd";
       el.style.padding = "20px";
@@ -30,11 +31,14 @@ Vue.directive('theme', {
   }
 });
 
-// Vue.directive('rainbow', {
-//   bind: function(el) {
-//     el.style.color = "#" + Math.random().toString().slice(2.8);  
-//   }
+// Filters
+// Vue.filter('to-uppercase', function(value) {
+//   return value.toUpperCase();
 // });
+
+Vue.filter('snippet', function(value) {
+  return value.slice(0,100) + "...";
+});
 
 // export const bus = new Vue(); // Creating a new bus event in vue
 
