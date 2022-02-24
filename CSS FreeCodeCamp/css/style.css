@@ -1,0 +1,49 @@
+h2 {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+#services {
+    color: green ;
+}
+
+/* li:nth-child(3) {
+    color: red;
+} */
+
+/* #google-link:link{
+    color: blue;
+}
+
+#google-link:visited{
+    color: red;
+} */
+
+
+/* ================== NOTE TO SELF ======================= */
+/* Every anchor tag will be affected that follows a h2 heading  */
+/* ======================================================= */
+h2 + a {
+    color: yellow;
+}
+
+/* ================== NOTE TO SELF =================================== */
+/* Every button that follows a textarea but it is in the same parent   */
+/* =================================================================== */
+textarea ~ button {
+    color: #949;
+}
+
+/* ================== NOTE TO SELF =================================== */
+/* Every li inside a ul will be affected   */
+/* =================================================================== */
+ ul > li {
+    color: orange;
+}
+
+/* ul li {
+    color: green;
+} */
