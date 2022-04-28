@@ -3,7 +3,7 @@
 
 
 .btn-rounded {
-    // Include a bootstrap mixin to hide this button on screen sizes of 600px and below
+    // NOTE: Include a bootstrap mixin to hide this button on screen sizes of 576px and below
     @include media-breakpoint-down(sm){
         display: none;
     }
